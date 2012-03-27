@@ -75,12 +75,6 @@ Language Support
 eSpeak supports multiple languages so speak.js can too. To do this, you
 need to build a custom version of speak.js:
 
- * Bundle the proper language files. For french, you need fr_dict and voices/fr.
-   See commented-out code in emscripten.sh and bundle.py
- * Expose those files to the emulated filesystem, in post.js. See commented-out
-   code in there as well.
- * Run emscripten.sh to build.
-
 You then need to call speak() with the `voice` option that tells it to use the
 right voice for your language. For example, for French this should work:
 
