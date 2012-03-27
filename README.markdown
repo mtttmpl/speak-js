@@ -5,6 +5,7 @@ A port of the eSpeak speech synthesizer from C++ to JavaScript using Emscripten.
 
 Enables text-to-speech on the web using only JavaScript and HTML5.
 
+View a working demo at [http://projects.mattytemple.com/speak-js/](http://projects.mattytemple.com/speak-js/ "Demo").
 
 Usage
 -----
@@ -25,7 +26,6 @@ Very simple! Do this:
  * Call speak() to say stuff in JavaScript
 
       `speak('hello world!')`
-
 
 Options
 -------
@@ -51,7 +51,6 @@ For example
 
 will talk in a very high-pitched voice.
 
-
 Architecture
 ------------
 
@@ -67,7 +66,6 @@ with speakClient.js in your HTML page. speak(), if called with noWorker
 set to true in the options object, will directly call the WAV generation
 code in speakGenerator.js instead of forwarding the call to a worker
 which would have done the same.
-
 
 Language Support
 ----------------
