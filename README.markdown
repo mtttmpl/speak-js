@@ -13,26 +13,34 @@ Usage
 Very simple! Do this:
 
  * Include the script in your html header,
-
-      `<script src="speakClient.js"></script>`
+ 
+```html
+<script src="speakClient.js"></script>
+```
 
    (and make sure you have speakClient.js available, as well as
    speakWorker.js and speakGenerator.js)
 
  * Add a div with an audio element called 'audio' in your html body,
 
-      `<div id="audio"></div>`
+```html
+<div id="audio"></div>
+```
 
  * Call speak() to say stuff in JavaScript
 
-      `speak('hello world!')`
+```javascript
+speak('hello world!')
+```
 
 Options
 -------
 
 You can also specify some options with calling speak(), by doing
 
-      `speak('hello world', { option1: value1, option2: value2 .. })`
+```javascript
+speak('hello world', { option1: value1, option2: value2 .. })
+```
 
 available options are:
 
@@ -47,7 +55,9 @@ available options are:
 
 For example
 
-      `speak('hello world', { pitch: 100 })`
+```javascript
+speak('hello world', { pitch: 100 })
+```
 
 will talk in a very high-pitched voice.
 
@@ -76,5 +86,7 @@ need to build a custom version of speak.js:
 You then need to call speak() with the `voice` option that tells it to use the
 right voice for your language. For example, for French this should work:
 
-      `speak('boulanger', { voice: 'fr' })`
+```javascript
+speak('boulanger', { voice: 'fr' })
+```
 
